@@ -31,8 +31,7 @@
       "repeat": true,
       "repeat-delay": 120,
       "messages": [
-        "I'm a regular player"
-        
+        "Hello players!"
       ]
     },
     "chat-log": true,
@@ -44,20 +43,20 @@
     "enabled": true,
     "circle-walk": {
       "enabled": true,
-      "radius": 4,
-      "speed": 3000
+      "radius": 5,
+      "speed": 2500
     },
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "interval": 4000
     },
     "random-jump": {
       "enabled": true,
-      "interval": 10000
+      "interval": 8000
     }
   },
   "modules": {
-    "avoidMobs": true,
+    "avoidMobs": false,
     "combat": true,
     "beds": false,
     "chat": true,
@@ -65,7 +64,9 @@
   },
   "combat": {
     "attack-mobs": true,
-    "auto-eat": true
+    "attack-players": false,
+    "auto-eat": true,
+    "weapon-only": false
   },
   "beds": {
     "pick-up-day": false,
@@ -84,3 +85,4 @@
     "respond": true
   }
 }
+
