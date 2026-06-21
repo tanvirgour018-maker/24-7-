@@ -1,12 +1,12 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "SoloCloudHosting",
+    "username": "SoloHosting",
     "password": "",
     "type": "offline"
   },
   "server": {
-    "ip": "smpvir.aternos.mee",
+    "ip": "smpvir.aternos.me",
     "port": 35493,
     "version": "1.20.1",
     "try-creative": false
@@ -24,68 +24,53 @@
     },
     "anti-afk": {
       "enabled": true,
-      "sneak": false 
+      "sneak": true
     },
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 180,
+      "repeat-delay": 120,
       "messages": [
-        "Hello players!",
-        "What's up everyone?",
-        "Just chilling here."
+        "VIR.SMP",
+       
+        
       ]
     },
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 5000,
-    "max-reconnect-delay": 60000
+    "auto-reconnect-delay": 2000,
+    "max-reconnect-delay": 120000
   },
   "movement": {
     "enabled": true,
-    "random-walk": {
-      "enabled": true,
-      "max-distance": 15,
-      "idle-time-min": 2000,
-      "idle-time-max": 7000
-    },
     "circle-walk": {
-      "enabled": false
+      "enabled": true,
+      "radius": 4,
+      "speed": 3000
     },
     "look-around": {
       "enabled": true,
-      "interval-min": 1500,
-      "interval-max": 5000
+      "interval": 5000
     },
     "random-jump": {
       "enabled": true,
-      "interval-min": 3000,
-      "interval-max": 9000,
-      "while-moving-only": false
-    },
-    "random-crouch": {
-      "enabled": true,
-      "chance-percent": 35,
-      "duration-min": 1000,
-      "duration-max": 4000
+      "interval": 10000
     }
   },
   "modules": {
     "avoidMobs": true,
     "combat": true,
-    "beds": true,
+    "beds": false,
     "chat": true,
     "console-commands": true
   },
   "combat": {
     "attack-mobs": true,
-    "attack-players": false,
-    "auto-eat": true,
-    "weapon-only": true
+    "auto-eat": true
   },
   "beds": {
-    "pick-up-day": true,
-    "place-night": true
+    "pick-up-day": false,
+    "place-night": false
   },
   "discord": {
     "enabled": false,
@@ -97,11 +82,6 @@
     }
   },
   "chat": {
-    "respond": true,
-    "respond-keywords": {
-      "hi": "Hey!",
-      "hello": "Hello there!",
-      "afk": "Yeah, I am just hanging around."
-    }
+    "respond": true
   }
 }
