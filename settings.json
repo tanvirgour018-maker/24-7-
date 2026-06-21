@@ -24,41 +24,56 @@
     },
     "anti-afk": {
       "enabled": true,
-      "sneak": true
+      "sneak": false 
     },
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 120,
+      "repeat-delay": 180,
       "messages": [
-        "Hello players!"
+        "Hello players!",
+        "What's up everyone?",
+        "Just chilling here."
       ]
     },
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000
+    "auto-reconnect-delay": 5000,
+    "max-reconnect-delay": 60000
   },
   "movement": {
     "enabled": true,
-    "circle-walk": {
+    "random-walk": {
       "enabled": true,
-      "radius": 5,
-      "speed": 2500
+      "max-distance": 15,
+      "idle-time-min": 2000,
+      "idle-time-max": 7000
+    },
+    "circle-walk": {
+      "enabled": false
     },
     "look-around": {
       "enabled": true,
-      "interval": 4000
+      "interval-min": 1500,
+      "interval-max": 5000
     },
     "random-jump": {
       "enabled": true,
-      "interval": 8000
+      "interval-min": 3000,
+      "interval-max": 9000,
+      "while-moving-only": false
+    },
+    "random-crouch": {
+      "enabled": true,
+      "chance-percent": 35,
+      "duration-min": 1000,
+      "duration-max": 4000
     }
   },
   "modules": {
-    "avoidMobs": false,
+    "avoidMobs": true,
     "combat": true,
-    "beds": false,
+    "beds": true,
     "chat": true,
     "console-commands": true
   },
@@ -66,11 +81,11 @@
     "attack-mobs": true,
     "attack-players": false,
     "auto-eat": true,
-    "weapon-only": false
+    "weapon-only": true
   },
   "beds": {
-    "pick-up-day": false,
-    "place-night": false
+    "pick-up-day": true,
+    "place-night": true
   },
   "discord": {
     "enabled": false,
@@ -82,7 +97,11 @@
     }
   },
   "chat": {
-    "respond": true
+    "respond": true,
+    "respond-keywords": {
+      "hi": "Hey!",
+      "hello": "Hello there!",
+      "afk": "Yeah, I am just hanging around."
+    }
   }
 }
-
