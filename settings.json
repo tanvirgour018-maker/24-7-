@@ -6,8 +6,8 @@
     "type": "offline"
   },
   "server": {
-    "ip": "virpixel.aternos.me",
-    "port": 33347,
+    "ip": "smpvir.aternos.me",
+    "port": 35493,
     "version": "1.20.1",
     "try-creative": false
   },
