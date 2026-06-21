@@ -1,7 +1,7 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "noob",
+    "username": "bot go",
     "password": "",
     "type": "offline"
   },
@@ -12,7 +12,7 @@
     "try-creative": false
   },
   "position": {
-    "enabled": false,
+    "enabled": true,
     "x": 0,
     "y": 100,
     "z": 0
@@ -31,11 +31,13 @@
       "repeat": true,
       "repeat-delay": 120,
       "messages": [
-        "VIRSMP"
+        "hi",
+        "enjoy",
+        "virsmp"
       ]
     },
     "chat-log": true,
-    "auto-reconnect": false,
+    "auto-reconnect": true,
     "auto-reconnect-delay": 2000,
     "max-reconnect-delay": 120000
   },
