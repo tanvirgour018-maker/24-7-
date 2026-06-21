@@ -31,9 +31,7 @@
       "repeat": true,
       "repeat-delay": 120,
       "messages": [
-        "VIRSMP",
-       
-        
+        "VIRSMP"
       ]
     },
     "chat-log": true,
