@@ -1,12 +1,12 @@
 {
-  "name": "AFK Bot",
+  "name": "Real Player Bot",
   "bot-account": {
-    "username": ".aqifnotfound483",
+    "username": "vOT",
     "password": "",
     "type": "offline"
   },
   "server": {
-    "ip": "smpvir.aternos.m",
+    "ip": "smpvir11.aternos.me",
     "port": 35493,
     "version": "1.20.1",
     "try-creative": false
@@ -23,17 +23,15 @@
       "password": "SoloPlayz"
     },
     "anti-afk": {
-      "enabled": true,
-      "sneak": true
+      "enabled": false,
+      "sneak": false
     },
     "chat-messages": {
       "enabled": true,
-      "repeat": true,
-      "repeat-delay": 120,
+      "repeat": false,
+      "repeat-delay": 180,
       "messages": [
-        "hi arayan",
-        "yo bros",
-        "darwin ki __"
+        "What's up everyone, just grinding out here!"
       ]
     },
     "chat-log": true,
@@ -44,33 +42,55 @@
   "movement": {
     "enabled": true,
     "circle-walk": {
-      "enabled": true,
-      "radius": 4,
-      "speed": 3000
+      "enabled": false,
+      "radius": 6,
+      "speed": 2500
     },
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "interval": 4000
     },
     "random-jump": {
+      "enabled": false,
+      "interval": 7000
+    },
+    "human-pathfinding": {
       "enabled": true,
-      "interval": 10000
+      "allow-parkour": true,
+      "allow-breaking": true
     }
   },
   "modules": {
-    "avoidMobs": true,
+    "avoidMobs": false,
     "combat": true,
-    "beds": false,
+    "beds": true,
     "chat": true,
-    "console-commands": true
+    "console-commands": true,
+    "auto-farm": true,
+    "auto-mine": true
   },
   "combat": {
     "attack-mobs": true,
-    "auto-eat": true
+    "attack-players": false,
+    "auto-eat": true,
+    "retaliate": true,
+    "weapon-preference": ["diamond_sword", "iron_sword", "stone_sword", "wooden_sword"]
+  },
+  "auto-farm": {
+    "enabled": true,
+    "targets": ["oak_log", "birch_log", "spruce_log", "dark_oak_log"],
+    "tool-preference": "axe",
+    "search-radius": 16
+  },
+  "auto-mine": {
+    "enabled": true,
+    "targets": ["coal_ore", "iron_ore", "diamond_ore", "deepslate_diamond_ore"],
+    "tool-preference": "pickaxe",
+    "max-depth": 12
   },
   "beds": {
-    "pick-up-day": false,
-    "place-night": false
+    "pick-up-day": true,
+    "place-night": true
   },
   "discord": {
     "enabled": false,
@@ -82,6 +102,13 @@
     }
   },
   "chat": {
-    "respond": true
+    "respond": true,
+    "ai-reply": true,
+    "mention-reply": true,
+    "smart-answers": {
+      "hello": "Hey there! Mind if I grind some resources here?",
+      "help": "I'm just gathering materials and clearing zombies.",
+      "owner": "I belong to Tanvir."
+    }
   }
 }
