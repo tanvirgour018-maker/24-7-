@@ -6,8 +6,8 @@
     "type": "offline"
   },
   "server": {
-    "ip": "smpvir11.aternos.me",
-    "port": 35493,
+    "ip": "vir24550.mcsh.io",
+    "port": 25565,
     "version": "1.20.1",
     "try-creative": false
   },
